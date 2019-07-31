@@ -1,18 +1,23 @@
 #! /usr/bin/env python3
-message1 = 'Your letter grade is a'
+MESSAGE1 = 'Your letter grade is a'
+MESSAGE2 = 'Your letter grade is an'
 print('What is your percentage of correct answers?')
 connection = float(input())
 if connection >100:
-    message1 = message1 + " You LIE!!!"
+    print("YOU LIED!!!")
 elif connection >= 90:
-    message1 = message1 + " A, congrats!!"
+    MESSAGE2 = MESSAGE2 + " A!!"
+    print(MESSAGE2)
 elif connection >= 80:
-    message1 = message1 + " B, try a little harder next time!!"
+    MESSAGE1 = MESSAGE1 + " B!!"
+    print(MESSAGE1)
 elif connection >= 70:
-    message1 = message1 + " C, average Joe!!"
+    MESSAGE1 = MESSAGE1 + " C!!"
+    print(MESSAGE1)
 elif connection >= 60:
-    message1 = message1 + " D, get studying!!"
+    MESSAGE1 = MESSAGE1 + " D!!"
+    print(MESSAGE1)
 elif connection <= 59:
-    message1 = message1 + " F, You FAILED"
-print(message1)
+    MESSAGE1 = MESSAGE1 + " F!!"
+    print(MESSAGE1)
 print("end of script")
