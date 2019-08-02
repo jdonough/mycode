@@ -20,4 +20,12 @@ def main():
     print ( people [0] ['name'] )
     print ( people [0] ['craft'] )
     print( people[0]['name'], " on the " + people[0]['craft'] )
+    print( people[1]['name'], " on the " + people[1]['craft'] )
+    print( people[2]['name'], " on the " + people[2]['craft'] )
+    print( people[3]['name'], " on the " + people[3]['craft'] )
+    print( people[4]['name'], " on the " + people[4]['craft'] )
+    print( people[5]['name'], " on the " + people[5]['craft'] )
+    for x in people:
+        print ( x['name'], "is on the "  + x['craft'])
+
 main()
